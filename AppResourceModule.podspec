@@ -31,8 +31,11 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
   s.swift_version = '5.0'
   
+  s.static_framework = true
+  
   s.source_files = 'AppResourceModule/Classes/**/*'
   
+#  s.resources = 'AppResourceModule/Assets/**/{*}'
    s.resource_bundles = {
      'AppResourceModule' => ['AppResourceModule/Assets/**/{*}']
    }

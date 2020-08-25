@@ -3,9 +3,9 @@ use_frameworks!
 target 'AppResourceModule_Example' do
   pod 'AppResourceModule', :path => '../'
 
-  target 'AppResourceModule_Tests' do
-    inherit! :search_paths
-
-    
-  end
+#  target 'AppResourceModule_Tests' do
+#    inherit! :search_paths
+#
+#
+#  end
 end
