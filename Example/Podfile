@@ -1,8 +1,11 @@
-use_frameworks!
+use_frameworks! 
 
 target 'AppResourceModule_Example' do
   pod 'AppResourceModule', :path => '../'
 
+  pod 'BasicCore', :path => '../'
+  pod 'AModule', :path => '../'
+  pod 'BModule', :path => '../'
 #  target 'AppResourceModule_Tests' do
 #    inherit! :search_paths
 #

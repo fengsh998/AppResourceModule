@@ -35,9 +35,16 @@ TODO: Add long description of the pod here.
   
   s.source_files = 'AppResourceModule/Classes/**/*'
   
+#  s.resources = 'AppResourceModule/xfSDK.bundle'
 #  s.resources = 'AppResourceModule/Assets/**/{*}'
+#   s.resources = 'AppResourceModule/Assets/**/*.png'
    s.resource_bundles = {
-     'AppResourceModule' => ['AppResourceModule/Assets/**/{*}']
+#     'AppResourceModule' => ['AppResourceModule/Assets/**/{*}']
+     
+     #'AppResourceModule' => ['AppResourceModule/Assets/**/{*.bundle}','AppResourceModule/Assets/**/{*.xcassets}','AppResourceModule/images/{*.png}']
+     'AppResourceModule' => ['AppResourceModule/Assets/**/{*.xcassets}','AppResourceModule/Assets/**/{*.bundle}']
+     #'AppResourceModule' => ['AppResourceModule/Assets/**/{*}']
+     
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

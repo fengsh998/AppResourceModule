@@ -1,0 +1,42 @@
+Pod::Spec.new do |s|
+  s.name             = 'BModule'
+  s.version          = '0.1.0'
+  s.summary          = 'A short description of BModule.'
+
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
+
+  s.description      = <<-DESC
+TODO: Add long description of the pod here.
+                       DESC
+
+  s.homepage         = 'https://github.com/fengsh998/BModule'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'fengsh998@163.com' => 'fengsh998@163.com' }
+  s.source           = { :git => 'https://github.com/fengsh998/AppResourceModule.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
+  
+  s.static_framework = true
+    
+  s.subspec 'Classes' do |src|
+    src.source_files = 'Modules/BModule/Classes/**/*'
+  end
+  
+
+  s.subspec 'Resources' do |res|
+    res.resource_bundles = {
+      'BModule' => ['Modules/BModule/Assets/**/{*.xcassets}','Modules/BModule/Assets/**/{*.bundle}']
+    }
+  end
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+   s.dependency 'BasicCore', '~> 0.1.0'
+end
