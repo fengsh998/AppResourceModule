@@ -26,6 +26,7 @@ TODO: Add long description of the pod here.
   s.static_framework = true
     
   s.subspec 'Classes' do |src|
+    s.name = 'Classes'
     src.source_files = 'Modules/BModule/Classes/**/*'
   end
   
