@@ -2,7 +2,7 @@
 //  AppRes.swift
 //  AppResourceModule
 //
-//  Created by beantechs on 2020/8/24.
+//  Created by fengsh998 on 2020/8/24.
 //
 
 import Foundation
